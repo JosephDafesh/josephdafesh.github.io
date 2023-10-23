@@ -18,10 +18,38 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(function () {
                 title2.style.transition = "opacity 3s";
                 title2.style.opacity = 1;
+            }, 5000);
+
+            
+            setTimeout(function () {
+                const contactButton = document.getElementById('contact-button');
+                const contactForm = document.getElementById('contact-form');
+
+                contactForm.style.opacity = 1;
+                contactButton.style.opacity = 1;
             }, 5000); 
         }
     }
     typeText(textToType, 0);
+
+    const contactButton = document.getElementById('contact-button');
+    const contactForm = document.getElementById('contact-form');
+
+    contactButton.addEventListener('click', function () {
+        if (contactForm.style.display === 'none' || contactForm.style.display === '') {
+            contactForm.style.display = 'block';
+            typingContainer.style.display = 'none';
+            title2.style.display = 'none';
+        } else {
+            contactForm.style.display = 'none';
+            typingContainer.style.display = 'block';
+            title2.style.display = 'block';
+        }
+    });
+
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Handle the form submission (send email, etc.) here.
+        alert('Form submitted successfully!');
+    });
 });
-
-

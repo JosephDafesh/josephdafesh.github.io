@@ -11,7 +11,7 @@ html {
     right: 0;
     color: #cacaca;
     text-align: center;
-    font-family: Lato;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     font-size: 60px;
     letter-spacing: 2px;
@@ -33,9 +33,32 @@ html {
     margin-top: -60px;
     padding-left: 10px;
 }
+#contact-button {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    color: #cacaca;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-top: -60px;
+    padding-right: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+#contact-button,
+#contact-form {
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out; 
+}
 
 #title span {
-    background: -webkit-linear-gradient(white, #0067cd);
+    background: -webkit-linear-gradient(white, #999999);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
