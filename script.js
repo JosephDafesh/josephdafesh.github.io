@@ -1,4 +1,10 @@
 title2.style.opacity = 0;
+
+document.getElementById('contact-button').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    window.location.href = 'josephdafesh.com/contact'; 
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const textToType = "Hey there, I'm Joe. Let's build.";
     const typingContainer = document.getElementById('typing-container');
