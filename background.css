@@ -9,7 +9,7 @@ html {
     top: 50%;
     left: 0;
     right: 0;
-    color: #ffffff;
+    color: #cacaca;
     text-align: center;
     font-family: Lato;
     font-weight: 300;
@@ -24,18 +24,18 @@ html {
     top: 10%;
     left: 0;
     right: 1;
-    color: #b6b6b7;
+    color: #cacaca;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 38px;
     letter-spacing: 1px;
     margin-top: -60px;
     padding-left: 10px;
 }
 
 #title span {
-    background: -webkit-linear-gradient(white, #14304c);
+    background: -webkit-linear-gradient(white, #0067cd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -605,3 +605,4 @@ html {
         transform: translateY(-2000px);
     }
 }
+
