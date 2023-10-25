@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const title2 = document.getElementById("title2");
   const githubIcon = document.getElementById("icon");
   const linkedinIcon = document.getElementById("icon2");
+  const thePicture = document.getElementById("myPicture");
+
+  thePicture.style.opacity = 0;
 
   function typeText(text, index) {
     if (index < text.length) {
@@ -13,15 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
       index++;
       setTimeout(function () {
         typeText(text, index);
-      }, 100);
+      }, 90);
     } else {
-      typingContainer.style.transition = "opacity 6s";
+      typingContainer.style.transition = "opacity 4s";
       typingContainer.style.opacity = 0;
 
       setTimeout(function () {
         title2.style.transition = "opacity 3s";
         title2.style.opacity = 1;
-      }, 3000);
+      }, 2500);
 
       setTimeout(function () {
         const contactButton = document.getElementById("contact-button");
@@ -29,16 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         contactForm.style.opacity = 1;
         contactButton.style.opacity = 1;
-      }, 3000);
+      }, 2500);
 
       setTimeout(function () {
         githubIcon.style.transition = "opacity 3s";
         linkedinIcon.style.transition = "opacity 3s";
+        thePicture.style.transition = "opacity 3s";
         githubIcon.style.opacity = 1;
         linkedinIcon.style.opacity = 1;
-      }, 3000);
+        thePicture.style.opacity = 1;
+      }, 2500);
     }
   }
+
   typeText(textToType, 0);
 
   const contactButton = document.getElementById("contact-button");
