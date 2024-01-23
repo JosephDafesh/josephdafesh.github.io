@@ -1,39 +1,33 @@
 class Stars {
-    constructor() {
-      this.starCount = 101;
-      this.stars = [];
+  constructor() {
+    this.starCount = 101;
+    this.stars = [];
+  }
+
+  initialize(canvas) {
+    for (let i = 0; i < this.starCount; i++) {
+      this.stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 2,
+      });
     }
-  
-    // Initialize stars with random positions
-    initialize(canvas) {
-      for (let i = 0; i < this.starCount; i++) {
-        this.stars.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          size: Math.random() * 2, // Size of stars
-        });
-      }
-      console.log(this.stars);
-    }
-  
-    // Function to draw stars
-    draw(ctx) {
-      ctx.fillStyle = "#ffffff"; // Star color (white)
-      for (const star of this.stars) {
-        ctx.fillRect(star.x, star.y, star.size, star.size);
-      }
-    }
-  
-    // Animation loop
-    animate(canvas, ctx) {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-  
-      // Draw starry background
-      this.draw(ctx);
-  
-      // ... (the rest of your code for the bouncing circle)
-  
-      requestAnimationFrame(() => this.animate(canvas, ctx));
+    console.log(this.stars);
+  }
+
+  draw(ctx) {
+    ctx.fillStyle = "#ffffff"; 
+    for (const star of this.stars) {
+      ctx.fillRect(star.x, star.y, star.size, star.size);
     }
   }
-  export default Stars;
+
+  animate(canvas, ctx) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    this.draw(ctx);
+
+    requestAnimationFrame(() => this.animate(canvas, ctx));
+  }
+}
+export default Stars;

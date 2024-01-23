@@ -4,15 +4,15 @@ class Planets {
   constructor(_planetCount) {
     this.planetCount = _planetCount;
     this.planets = [];
-    this.gravityConstant = Math.pow(0.1,11);
+    this.gravityConstant = Math.pow(0.1,10);
   }
 
   isWithinBounds(planet, canvas) {
     if (
-      planet.x - planet.radius > 0 && // left border
-      planet.x + planet.radius < canvas.width && // right border
-      planet.y - planet.radius > 0 && // top border
-      planet.y + planet.radius < canvas.height // bottom border
+      planet.x - planet.radius > 0 && 
+      planet.x + planet.radius < canvas.width &&
+      planet.y - planet.radius > 0 && 
+      planet.y + planet.radius < canvas.height 
     )
       return true;
   }
@@ -46,15 +46,14 @@ class Planets {
     return planet;
   }
 
-  // Initialize planets with random radii
   initialize(canvas) {
     for (let i = 0; i < this.planetCount; i++) {
       this.planets.push(this.generatePlanets(canvas));
     }
   }
-  // Function to draw stars
+
   draw(ctx) {
-    ctx.fillStyle = "#9B9ADC"; // Planet color (light purple)
+    ctx.fillStyle = "#9B9ADC"; 
     for (const planet of this.planets) {
       ctx.beginPath();
       ctx.arc(planet.x, planet.y, planet.radius, 0, Math.PI * 2);
@@ -63,11 +62,9 @@ class Planets {
     }
   }
 
-  // Animation loop
   animate(canvas, ctx) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw planets
     this.draw(ctx);
 
     requestAnimationFrame(() => this.animate(canvas, ctx));
