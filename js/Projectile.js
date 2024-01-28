@@ -45,6 +45,7 @@ class Projectile extends Circle {
       this.ax = 0;
       this.ay = 0;
     }
+    console.log(`i'm flying!`)
   }
 }
 
