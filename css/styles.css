@@ -11,6 +11,14 @@
   --max-width: 1400px;
 }
 
+#gravityButton{
+  margin-bottom: 15px;
+}
+
+#gravityExplanation{
+  max-width: 80vh;
+}
+
 .parent {
   display: flex;
   flex-direction: column;
@@ -139,7 +147,6 @@ a:hover {
   flex-basis: 60%;
 }
 
-/* DEEP DIVE CSS (right-hand div)*/
 .deep-dive {
   flex-basis: 40%;
 }
@@ -148,7 +155,6 @@ section.about {
   padding-bottom: 0px;
 }
 
-/* PROJECTS CSS */
 section.projects {
   display: flex;
   flex-wrap: wrap;
