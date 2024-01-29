@@ -11,15 +11,19 @@
   --max-width: 1400px;
 }
 
-#gravityButton, #kafkaViewButton {
+#gravityButton, 
+#kafkaViewButton, 
+#stalkStocksButton, 
+#vektButton {
   margin-bottom: 15px;
 }
 
-#gravityExplanation, #kafkaViewExplanation {
+#gravityExplanation, 
+#kafkaViewExplanation,
+#stalkStocksExplanation, 
+#vektExplanation {
   max-width: 80vh;
 }
-
-
 
 .parent {
   display: flex;
