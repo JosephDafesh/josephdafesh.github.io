@@ -11,6 +11,32 @@
   --max-width: 1400px;
 }
 
+#continueButton {
+  font-size: 16px;
+  margin: 5px;
+  line-height: 16px;
+}
+
+#continueButton:hover {
+  opacity: 60%;
+  transform: scale(1.05);
+}
+
+#gravityButton {
+  border-radius: 15px;
+  padding: 12px;
+}
+
+#projectButton {
+  font-size: 16px;
+  margin: 5px;
+  line-height: 16px;
+}
+
+#projectbutton:hover {
+  opacity: 60%;
+}
+
 #foodReview {
   font-size: 24px;
   line-height: 35px;
@@ -31,6 +57,8 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+
 
 #foodBox {
   margin: 5px;
@@ -75,8 +103,9 @@
   border: 1px solid var(--primary-color);
   width: 300px;
   height: 430px;
-  opacity: 90%;
+  opacity: 80%;
   transform: scale(0.95);
+  border-radius: 5px;
 }
 
 #food:hover {
@@ -87,7 +116,6 @@
   transform: scale(1);
 }
 
-#gravityButton,
 #kafkaViewButton,
 #stalkStocksButton,
 #vektButton {
@@ -138,7 +166,7 @@ img {
 }
 
 img:hover {
-  opacity: 50%;
+  opacity: 100%;
 }
 
 body {
@@ -265,7 +293,7 @@ section.projects:hover {
   text-align: center;
   color: var(--primary-color);
   transition: color 0.3s ease;
-  width: 45%;
+  width: 43%;
   height: 100%;
 }
 
@@ -281,11 +309,6 @@ section.projects:hover {
   font-size: 16px;
   margin: 5px;
   line-height: 16px;
-}
-
-#food-title:hover {
-  opacity: 60%;
-  transform: scale(1.05);
 }
 
 #project-title {
