@@ -58,8 +58,6 @@
   margin-bottom: 20px;
 }
 
-
-
 #foodBox {
   margin: 5px;
   display: flex;
@@ -114,6 +112,11 @@
   color: white;
   background-color: var(--background-color-medium);
   transform: scale(1);
+}
+
+#kafkaViewButton {
+  border-radius: 5px;
+  padding: 10px
 }
 
 #kafkaViewButton,
