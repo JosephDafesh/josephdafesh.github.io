@@ -236,10 +236,10 @@ a:hover {
 }
 
 #headshot {
-  width: 100px;
+  width: 85px;
   height: 100px;
   opacity: 100%;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 #fingerprint {
