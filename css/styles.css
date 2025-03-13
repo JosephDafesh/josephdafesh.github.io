@@ -219,13 +219,13 @@ a:hover {
 .title {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
 }
 
 #title {
   font-weight: 600;
-  margin-left: 20px;
+  margin-left: 1vh;
   font-size: 40px;
   color: var(--primary-color);
   justify-self: center;
